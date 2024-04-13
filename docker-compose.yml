@@ -9,6 +9,7 @@ services:
       - ./nginx/proxy.conf:/etc/nginx/conf.d/proxy.conf
       - ./nginx/wordpress1.conf:/etc/nginx/conf.d/wordpress1.conf
       - ./nginx/wordpress2.conf:/etc/nginx/conf.d/wordpress2.conf
+      - ./nginx/html:/var/www/html
     ports:
       - "80:80"
       - "443:443"
